@@ -8,8 +8,8 @@ more details in: [https://github.com/opendilab/PPOxFamily](https://github.com/op
 </div>
 
 ## TODO
-- [ ] finish all the code in class one
-- [ ] correct notes
-- [ ] theorical inference processes
-
+- [x] finish all the code in class one to four
+- [x] correct notes
+- [x] theorical inference processes
+- [ ] 🆕class five
 

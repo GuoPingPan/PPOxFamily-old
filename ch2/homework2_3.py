@@ -24,6 +24,11 @@ def rocket_landing():
     agent = PPOF(env='rocket_landing', exp_name='./rocket_landing_demo')
     agent.train(step=int(5e6), context='spawn')
 
+def rocket_landing_deploy():
+    # Please install rocket env first, `pip3 install git+https://github.com/nighood/rocket-recycling@master#egg=rocket_recycling`
+    agent = PPOF(env='rocket_landing', exp_name='./rocket_landing_demo')
+    agent.deploy(ckpt_path="rocket_landing_demo\ckpt\iteration_38400.pth.tar", enable_save_replay=True)
+
 
 def drone_fly():
     # Please install gym_pybullet_drones env first, `pip3 install git+https://github.com/zjowowen/gym-pybullet-drones@master`
@@ -45,6 +50,7 @@ if __name__ == "__main__":
     # lunarlander_discrete()
     # lunarlander_continuous()
     # rocket_landing()
+    rocket_landing_deploy()
     # drone_fly()
     # hybrid_moving()
-    hybrid_moving_deploy()
+    # hybrid_moving_deploy()
